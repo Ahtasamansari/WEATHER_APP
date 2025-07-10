@@ -6,7 +6,7 @@ import Typography from "@mui/material/Typography";
 import './info.css';
 export const InfoBox = ({Info}) => {
   const INI_URL =
-    "https://media.istockphoto.com/id/1486995271/photo/city-at-dusk-city-buildings-against-the-sky-polluted-air-poor-ecology.jpg?s=1024x1024&w=is&k=20&c=XWSF8mtFeU-zc3y4Me-WEDvy4wpF_sO0XQ6rsytiVts=";
+    "https://images.unsplash.com/photo-1696912158241-be58ad220dcc?q=80&w=1994&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D ";
   
   return (
     <div className="infobox">

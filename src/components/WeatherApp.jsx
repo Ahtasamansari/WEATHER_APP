@@ -26,4 +26,4 @@ const[weatherInfo, setWeatherInfo]=useState({
   )
 }
 
-export default weatherApp
+export default weatherApp;
