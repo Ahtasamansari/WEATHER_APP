@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./SearchBox.css";
+// import "./SearchBox.css";
 import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
 
@@ -7,13 +7,17 @@ function SearchBoxBtn({ updateInfo }) {
   const [city, setCity] = useState("");
   const [error, setError] = useState(false);
 
-  const API_URL = `http://api.openweathermap.org/data/2.5/forecast`;
+  const API_URL = "https://api.openweathermap.org/data/2.5/forecast";
   const API_KEY = "5991e00dd369486a830303e824e206f5";
+  
 
   const getWeatherInfo = async () => {
-    const response = await fetch(
-      `${API_URL}?q=${city}&appid=${API_KEY}&units=metric`
-    );
+const response = await fetch(
+  `${API_URL}?q=${city}&appid=${API_KEY}&units=metric`
+);
+
+
+
     const jsonResponse = await response.json();
 
     if (jsonResponse.cod !== "200") {
